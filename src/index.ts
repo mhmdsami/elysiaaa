@@ -1,6 +1,7 @@
 import Elysia from "elysia";
-import { api } from "@/controllers";
 import { jwt } from "@elysiajs/jwt";
+import { api } from "@/controllers";
+import {JWT_SECRET, PORT} from "@/utils/config";
 
 const app = new Elysia({
   name: "app",
@@ -8,11 +9,11 @@ const app = new Elysia({
   .use(
     jwt({
       name: "jwt",
-      secret: Bun.env.JWT_SECRET!,
+      secret: JWT_SECRET,
     }),
   )
   .use(api)
-  .listen(3000);
+  .listen(PORT);
 
 console.log(
   `🦊 Elysia is running at http://${app.server?.hostname}:${app.server?.port}`,

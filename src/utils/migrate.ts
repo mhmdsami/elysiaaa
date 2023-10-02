@@ -1,9 +1,9 @@
 import postgres from "postgres";
 import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate } from "drizzle-orm/postgres-js/migrator";
+import { DB_URL } from "@/utils/config"
 
-const connectionString = Bun.env.DB_URL!;
-const sql = postgres(connectionString, { max: 1 });
+const sql = postgres(DB_URL, { max: 1 });
 const db = drizzle(sql);
 
 async function main() {
