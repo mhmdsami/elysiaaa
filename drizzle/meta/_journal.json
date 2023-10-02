@@ -5,29 +5,8 @@
     {
       "idx": 0,
       "version": "5",
-      "when": 1696226094166,
-      "tag": "0000_kind_gambit",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "5",
-      "when": 1696226101454,
-      "tag": "0001_absent_living_mummy",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "5",
-      "when": 1696228339064,
-      "tag": "0002_daily_shotgun",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "5",
-      "when": 1696228354099,
-      "tag": "0003_bitter_zzzax",
+      "when": 1696230303208,
+      "tag": "0000_brainy_morbius",
       "breakpoints": true
     }
   ]
