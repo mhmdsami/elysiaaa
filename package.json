@@ -8,6 +8,7 @@
     "format": "prettier --write src/**/*.ts"
   },
   "dependencies": {
+    "@elysiajs/jwt": "^0.7.0",
     "drizzle-orm": "^0.28.6",
     "elysia": "latest",
     "postgres": "^3.3.5",
