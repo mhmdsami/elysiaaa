@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "pg",
-  "id": "a701f9f3-e1a9-4b6c-994d-6e07fdacf5d3",
+  "id": "663d00d7-de84-4056-92f0-582a40d798e9",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "tasks": {
@@ -36,7 +36,7 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "timestamp",
+          "type": "date",
           "primaryKey": false,
           "notNull": false,
           "default": "now()"
@@ -97,7 +97,7 @@
         },
         "created_at": {
           "name": "created_at",
-          "type": "timestamp",
+          "type": "date",
           "primaryKey": false,
           "notNull": false,
           "default": "now()"

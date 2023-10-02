@@ -1,9 +1,9 @@
 import {
   boolean,
+  date,
   pgTable,
   serial,
   text,
-  timestamp,
   uuid,
 } from "drizzle-orm/pg-core";
 
@@ -12,7 +12,7 @@ export const users = pgTable("users", {
   name: text("name").notNull(),
   email: text("email").unique().notNull(),
   password: text("password").notNull(),
-  createdAt: timestamp("created_at").defaultNow(),
+  createdAt: date("created_at").defaultNow(),
 });
 
 export const tasks = pgTable("tasks", {
@@ -20,6 +20,6 @@ export const tasks = pgTable("tasks", {
   title: text("title").notNull(),
   description: text("description").notNull(),
   completed: boolean("completed").default(false),
-  createdAt: timestamp("created_at").defaultNow(),
+  createdAt: date("created_at").defaultNow(),
   userEmail: text("user_email").references(() => users.email),
 });

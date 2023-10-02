@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS "tasks" (
 	"title" text NOT NULL,
 	"description" text NOT NULL,
 	"completed" boolean DEFAULT false,
-	"created_at" timestamp DEFAULT now(),
+	"created_at" date DEFAULT now(),
 	"user_email" text
 );
 --> statement-breakpoint
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS "users" (
 	"name" text NOT NULL,
 	"email" text NOT NULL,
 	"password" text NOT NULL,
-	"created_at" timestamp DEFAULT now(),
+	"created_at" date DEFAULT now(),
 	CONSTRAINT "users_email_unique" UNIQUE("email")
 );
 --> statement-breakpoint
