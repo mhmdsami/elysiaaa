@@ -1,6 +1,6 @@
 import Elysia, { t } from "elysia";
-import { db } from "../db";
-import { users } from "../schema";
+import { db } from "@/utils/db";
+import { users } from "@/schema";
 import { eq } from "drizzle-orm";
 
 export const authController = new Elysia({

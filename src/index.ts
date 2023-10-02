@@ -1,5 +1,5 @@
 import Elysia from "elysia";
-import { api } from "./controllers";
+import { api } from "@/controllers";
 import { jwt } from "@elysiajs/jwt";
 
 const app = new Elysia({

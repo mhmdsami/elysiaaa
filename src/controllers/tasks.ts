@@ -1,8 +1,8 @@
 import Elysia, { t } from "elysia";
-import { db } from "../db";
-import { isAuthenticated } from "../middlewares/auth";
 import { and, eq } from "drizzle-orm";
-import { tasks } from "../schema";
+import { db } from "@/utils/db";
+import { isAuthenticated } from "@/middlewares/auth";
+import { tasks } from "@/schema";
 
 export const tasksController = new Elysia({
   name: "tasks",
