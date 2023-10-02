@@ -1,15 +1,22 @@
-# Elysia with Bun runtime
+# Task API! 
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+## Setup
+- Install the dependencies
 ```bash
-bun create elysia ./elysia-example
+bun install
+```
+- Create a `.env` file in the root directory (see `.env.example` for an example)
+- Generate migration files
+```bash
+bun run db:generate
+```
+- Run the migrations
+```bash
+bun run db:migrate
 ```
 
 ## Development
-To start the development server run:
+To start the development server run
 ```bash
 bun run dev
 ```
-
-Open http://localhost:3000/ with your browser to see the result.
